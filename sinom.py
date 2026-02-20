@@ -119,15 +119,15 @@ def httpcall(url):
 			urllib3.urlopen(request)
 			if(flag==1): set_flag(0)
 			if(Mod==500): Mod=0
-	except urllib3.HTTPError, e:
+	except (urllib3.HTTPError, e):
 			set_flag(1)
 			Mod=500
 			time.sleep(60)
-	except urllib2.URLError, e:
+	except (urllib3.URLError, e):
 			sys.exit()
 	else:
 			inc_counter()
-			urllib2.urlopen(request)
+			urllib3.urlopen(request)
 	return(Mod)
 
 class HTTPThread(threading.Thread):
