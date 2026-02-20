@@ -137,7 +137,7 @@ class HTTPThread(threading.Thread):
 				Mod=httpcall(url)
 				if (Mod==500) & (safe==1):
 					set_flag(2)
-		except Exception, ex:
+		except (Exception, ex):
 			pass
 
 class MonitorThread(threading.Thread):
