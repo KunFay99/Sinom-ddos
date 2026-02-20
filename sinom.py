@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 #coding: utf-8
-#..:: > DDoS < ::.. Mod By DDoS-Webstie
 
 import random
 import socket
 import threading
 import time
 import datetime
-import urllib2
+import urllib3
 import urllib
 import re
 import sys
@@ -15,7 +14,6 @@ import optparse
 import os
 import urlparse
 
-#Hulk Mod By Hùng
 url=''
 host=''
 headers_useragents=[]
