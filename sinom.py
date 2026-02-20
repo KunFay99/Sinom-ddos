@@ -165,6 +165,7 @@ def randomIpList():
 class attacco(threading.Thread):
     def run(self):
     	referer_list()
+		current = x
        
         if current < len(listaproxy):
             proxy = listaproxy[current].split(':')
