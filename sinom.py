@@ -147,9 +147,9 @@ class MonitorThread(threading.Thread):
 			if (previous+100<request_counter) & (previous != request_counter):
 				previous=request_counter
 			if flag==2:
-				print ''
+				print("")
 
-#Joker Mod By Hùng
+
 def randomIp():
     random.seed()
     result = str(random.randint(1, 254)) + '.' + str(random.randint(1, 254))
